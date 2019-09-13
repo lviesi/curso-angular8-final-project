@@ -1,0 +1,141 @@
+{
+    "id": "mockoon_export",
+    "appVersion": "1.4.0",
+    "checksum": "1c07818dd8a93e47a7aee07e69f74acc",
+    "subject": "full",
+    "data": [
+        {
+            "uuid": "85694a10-d028-11e9-9b57-256d5b571b0f",
+            "name": "final-project",
+            "endpointPrefix": "",
+            "latency": 0,
+            "port": 8000,
+            "routes": [
+                {
+                    "uuid": "85694a12-d028-11e9-9b57-256d5b571b0f",
+                    "documentation": "authenticate",
+                    "method": "post",
+                    "endpoint": "customer/authenticate",
+                    "body": "{ \r\n    \"name\": \"Generic User\",\r\n    \"user\":\"generic\",\r\n    \"email\": \"generic@mail.com\",\r\n    \"password\":\"\",\r\n    \"image\": \"http://lorempixel.com/200/200/\",\r\n    \"token\":\"0b09b24d-bc8c-400e-8e10-61aa93cd715d\"\r\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "08083fb0-d355-11e9-836e-e1561b6801ee",
+                    "documentation": "create",
+                    "method": "post",
+                    "endpoint": "customer/create",
+                    "body": "{ \r\n   \"name\":\"Generic Customer\",\r\n   \"email\":\"generic@mail.com\",\r\n   \"user\":\"generic123\",\r\n   \"password\": \"12345\"\r\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "4ecfa090-d5a9-11e9-8627-0597bdd84b34",
+                    "documentation": "reset-password",
+                    "method": "post",
+                    "endpoint": "customer/reset-password",
+                    "body": "{ \r\n   \"email\":\"generic@mail.com\",\r\n   \"new-password\": \"54321\"\r\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "85694a14-d028-11e9-9b57-256d5b571b0f",
+                    "documentation": "customers",
+                    "method": "delete",
+                    "endpoint": "customers/0b09b24d-bc8c-400e-8e10-61aa93cd715d",
+                    "body": "{\n    \"message\": \"Cliente excluido com sucesso!\",\n    \"success\":true,\n    \"data\": null\n}",
+                    "latency": 800,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "85694a15-d028-11e9-9b57-256d5b571b0f",
+                    "documentation": "customers",
+                    "method": "get",
+                    "endpoint": "contacts",
+                    "body": "[\n{\"id\":\"0001\",\"name\":\"João Silva\",\"email\":\"joaosilva@mail.com\", \"cpf\":12345679800, \"phone\": 11987654321, \"address\": \"rua abc, 01 - centro\", \"image\": \"http://lorempixel.com/200/200/\"},\n{\"id\":\"0002\",\"name\":\"Maria Santos\",\"email\":\"maria@mail.com\", \"cpf\":12345679800, \"phone\": 11987654321, \"address\": \"rua abc, 01 - centro\", \"image\": \"http://lorempixel.com/200/200/\"},\n{\"id\":\"0003\",\"name\":\"Paulo Sérgio\",\"email\":\"psergio@mail.com\", \"cpf\":12345679800, \"phone\": 11987654321, \"address\": \"rua abc, 01 - centro\", \"image\": \"http://lorempixel.com/200/200/\"},\n{\"id\":\"0004\",\"name\":\"Joana Campos\",\"email\":\"joana@mail.com\", \"cpf\":12345679800, \"phone\": 11987654321, \"address\": \"rua abc, 01 - centro\", \"image\": \"http://lorempixel.com/200/200/\"},\n{\"id\":\"0005\",\"name\":\"André Baltieri\",\"email\":\"balta@mail.com\", \"cpf\":12345679800, \"phone\": 11987654321, \"address\": \"rua abc, 01 - centro\", \"image\": \"http://lorempixel.com/200/200/\"}\n]",
+                    "latency": 1000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "1860f360-d5b3-11e9-8627-0597bdd84b34",
+                    "documentation": "create",
+                    "method": "post",
+                    "endpoint": "contact/create",
+                    "body": "{ \r\n    \"id\": \"1000\",\r\n    \"name\":\"João da Silva\",\r\n    \"email\":\"joao@mail.com\",\r\n    \"cpf\":\"47023531874\",\r\n    \"phone\": \"11987654321\",\r\n    \"address\": \"Rua do Contato, 9999 - Centro\",\r\n    \"image\": \"http://lorempixel.com/200/200/\"\r\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                }
+            ],
+            "proxyMode": false,
+            "proxyHost": "",
+            "https": false,
+            "cors": true,
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                },
+                {
+                    "key": "Access-Control-Allow-Headers",
+                    "value": "Origin, X-Requested-With, Content-Type, Accept"
+                },
+                {
+                    "key": "Access-Control-Allow-Methods",
+                    "value": "GET, POST, PUT, DELETE, OPTIONS"
+                }
+            ]
+        }
+    ]
+}
