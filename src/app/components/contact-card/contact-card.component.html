@@ -1,0 +1,24 @@
+<ion-grid>
+  <ion-row>
+    <ion-col sizeMd="4" sizeXs="12" *ngFor="let contact of contacts">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>{{ contact.id }}</ion-card-subtitle>
+          <ion-card-title>{{ contact.name }}</ion-card-title>
+        </ion-card-header>
+
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="{{ contact.image }}">
+          </ion-avatar>
+          <ion-label>
+            <small>{{ contact.phone }}</small> <br>
+            <small>{{ contact.email }}</small> <br>
+            <small>{{ contact.cpf }}</small> <br>
+            <small>{{ contact.address }}</small>
+          </ion-label>
+        </ion-item>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>

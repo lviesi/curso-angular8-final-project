@@ -1,0 +1,48 @@
+<ion-menu>
+  <ion-content class="ion-padding">
+    <br>
+    <app-user-card></app-user-card>
+    <ion-list>
+      <ion-menu-toggle>
+        <ion-item routerLink="/">
+          <ion-icon slot="start" name="home"></ion-icon>
+          Home
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item routerLink="/new-contact">
+          <ion-icon slot="start" name="add-circle-outline"></ion-icon>
+          Adicionar Contato
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+  <ion-footer>
+    <ion-list>
+      <ion-item class="click" (click)="logout()">
+        <ion-icon slot="start" name="exit"></ion-icon>
+        Sair
+      </ion-item>
+    </ion-list>
+  </ion-footer>
+</ion-menu>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <small><b>Agenda de Contatos</b></small>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        <ion-icon slot="icon-only" name="exit"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-router-outlet main></ion-router-outlet>
+</ion-content>
